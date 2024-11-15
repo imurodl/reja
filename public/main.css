@@ -1,3 +1,8 @@
+* {
+  font-family: sans-serif;
+  font-style: normal;
+}
+
 .frame {
   width: 100%;
   height: 100%;
@@ -49,17 +54,32 @@
   box-shadow: 4px 0px 10px 0px rgba(47, 122, 249, 0.1);
 }
 
-.left-profile {
+/* Left frame styles */
+
+.left_frame .lefter {
   position: relative;
+  margin-left: 47px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lefter-1 {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 47px;
+}
+
+/* Left frame => left profile styles */
+
+.left-profile {
   width: 228px;
   height: 253px;
   margin-top: 47px;
-  margin-left: 47px;
   margin-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .left-profile__pic {
@@ -80,8 +100,6 @@
   align-items: center;
   margin-bottom: 6.21px;
   color: #2b2b2b;
-  /* H4 - 18px */ /* 22.248px */
-  font-family: sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -100,9 +118,7 @@
   color: #767676;
   font-kerning: none;
   font-feature-settings: "calt" off;
-  font-family: sans-serif;
   font-size: 15px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 160% */
   text-transform: capitalize;
@@ -152,38 +168,161 @@
   border: 1.5px solid #f0f0f6;
 }
 
+/* Left frame => left info styles */
+
 .left-info {
-  position: relative;
   width: 221px;
   height: 126px;
-  margin-left: 47px;
-
-  background-color: aqua;
 }
+
+.left-info .inf {
+  position: relative;
+  width: 221px;
+  height: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.left-info .comm {
+  position: relative;
+  height: 24px;
+  padding-left: 6px;
+  padding-right: 8px;
+  background: #ffb400;
+  color: #2b2b2b;
+  font-kerning: none;
+  font-feature-settings: "calt" off;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+  text-transform: capitalize;
+}
+
+.left-info .comm-left {
+  position: relative;
+  height: 24px;
+  color: #2b2b2b;
+  text-align: right;
+  font-kerning: none;
+  font-feature-settings: "calt" off;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+  text-transform: capitalize;
+}
+
+.left-info .comm-left.active {
+  color: #7eb942;
+}
+
+/* Left frame => left languages styles */
 
 .left-languages {
-  position: relative;
   width: 220px;
   height: 153px;
-  margin-left: 47px;
-
-  background-color: aqua;
 }
 
-.left-skills {
+.lang-title {
+  position: relative;
+  width: 95px;
+  height: 22px;
+  margin-bottom: 6px;
+  color: #2b2b2b;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 123.6%;
+  text-transform: capitalize;
+}
+
+.lang-item {
   position: relative;
   width: 220px;
-  height: 242px;
-  margin-left: 47px;
-
-  background-color: aqua;
+  height: 41px;
 }
 
-.left-eskills {
+.lang {
   position: relative;
+  width: 219px;
+  height: 24px;
+  margin-top: 9px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  color: #767676;
+  text-transform: capitalize;
+}
+
+.lang-name {
+  position: relative;
+  height: 24px;
+  padding-right: 8px;
+  font-kerning: none;
+  font-feature-settings: "calt" off;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+}
+
+.lang-pro {
+  font-kerning: none;
+  font-feature-settings: "calt" off;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+  position: relative;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lang-line {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  width: 220px;
+  height: 4px;
+}
+
+/* Left frame => left skills styles */
+
+.left-skills {
+  width: 220px;
+  height: 242px;
+}
+
+/* Left frame => left extra skills styles */
+
+.left-eskills {
   width: 186px;
   height: 148px;
-  margin-left: 47px;
+  justify-content: space-between;
+}
 
-  background-color: aqua;
+.eskill {
+  position: relative;
+  width: 186px;
+  height: 24px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+.eskill-name {
+  position: relative;
+  height: 24px;
+  padding-right: 8px;
+  margin-left: 15px;
+  color: #767676;
+  font-kerning: none;
+  font-feature-settings: "calt" off;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+  text-transform: capitalize;
 }

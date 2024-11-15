@@ -14,7 +14,7 @@
     <div class="frame">
         <div class="main_frame">
             <div class="left_frame">
-                <div class="left-profile">
+                <div class="left-profile lefter">
                     <div class="left-profile__pic">
                         <img src="images/profile.png" alt="profile picture" width="156.16px" height="135.05px">
                     </div>
@@ -46,13 +46,138 @@
                     </div>
                 </div>
                 <div class="marginer"></div>
-                <div class="left-info"></div>
+                <div class="left-info lefter">
+                    <div class="inf">
+                        <div class="comm">age:</div>
+                        <div class="comm-left">
+                            <%=user.age%>
+                        </div>
+                    </div>
+                    <div class="inf">
+                        <div class="comm">residency:</div>
+                        <div class="comm-left">
+                            <%=user.residence%>
+                        </div>
+                    </div>
+                    <div class="inf">
+                        <div class="comm">freelance:</div>
+                        <div class="comm-left active">Available</div>
+                    </div>
+                    <div class="inf">
+                        <div class="comm">address:</div>
+                        <div class="comm-left">
+                            <%=user.address%>
+                        </div>
+                    </div>
+                </div>
                 <div class="marginer"></div>
-                <div class="left-languages"></div>
+                <div class="left-languages lefter-1">
+                    <div class="lang-title">languages</div>
+                    <div class="lang-item">
+                        <div class="lang">
+                            <div class="lang-name">
+                                <%=user.languages[0]%>
+                            </div>
+                            <div class="lang-pro">100%</div>
+                        </div>
+                        <div class="lang-line"><img src="icon/line1.svg" alt=""></div>
+                    </div>
+                    <div class="lang-item">
+                        <div class="lang">
+                            <div class="lang-name">
+                                <%=user.languages[1]%>
+                            </div>
+                            <div class="lang-pro">80%</div>
+                        </div>
+                        <div class="lang-line"><img src="icon/line2.svg" alt=""></div>
+                    </div>
+                    <div class="lang-item">
+                        <div class="lang">
+                            <div class="lang-name">
+                                <%=user.languages[2]%>
+                            </div>
+                            <div class="lang-pro">60%</div>
+                        </div>
+                        <div class="lang-line"><img src="icon/line3.svg" alt=""></div>
+                    </div>
+                </div>
                 <div class="marginer"></div>
-                <div class="left-skills"></div>
+                <div class="left-skills lefter-1">
+                    <div class="lang-title">skills</div>
+                    <div class="lang-item">
+                        <div class="lang">
+                            <div class="lang-name">
+                                <%=user.skills[0]%>
+                            </div>
+                            <div class="lang-pro">90%</div>
+                        </div>
+                        <div class="lang-line"><img src="icon/line4.svg" alt=""></div>
+                    </div>
+                    <div class="lang-item">
+                        <div class="lang">
+                            <div class="lang-name">
+                                <%=user.skills[1]%>
+                            </div>
+                            <div class="lang-pro">85%</div>
+                        </div>
+                        <div class="lang-line"><img src="icon/line5.svg" alt=""></div>
+                    </div>
+                    <div class="lang-item">
+                        <div class="lang">
+                            <div class="lang-name">
+                                <%=user.skills[2]%>
+                            </div>
+                            <div class="lang-pro">80%</div>
+                        </div>
+                        <div class="lang-line"><img src="icon/line6.svg" alt=""></div>
+                    </div>
+                    <div class="lang-item">
+                        <div class="lang">
+                            <div class="lang-name">
+                                <%=user.skills[3]%>
+                            </div>
+                            <div class="lang-pro">75%</div>
+                        </div>
+                        <div class="lang-line"><img src="icon/line7.svg" alt=""></div>
+                    </div>
+                    <div class="lang-item">
+                        <div class="lang">
+                            <div class="lang-name">
+                                <%=user.skills[4]%>
+                            </div>
+                            <div class="lang-pro">85%</div>
+                        </div>
+                        <div class="lang-line"><img src="icon/line8.svg" alt=""></div>
+                    </div>
+                </div>
                 <div class="marginer"></div>
-                <div class="left-eskills"></div>
+                <div class="left-eskills lefter-1">
+                    <div class="lang-title">extra skills</div>
+                    <div class="eskill">
+                        <div class="eskill-icon"><img src="icon/eskill.svg" alt=""></div>
+                        <div class="eskill-name">
+                            <%=user.extra_skills[0]%>
+                        </div>
+                    </div>
+                    <div class="eskill">
+                        <div class="eskill-icon"><img src="icon/eskill.svg" alt=""></div>
+                        <div class="eskill-name">
+                            <%=user.extra_skills[1]%>
+                        </div>
+                    </div>
+                    <div class="eskill">
+                        <div class="eskill-icon"><img src="icon/eskill.svg" alt=""></div>
+                        <div class="eskill-name">
+                            <%=user.extra_skills[2]%>
+                        </div>
+                    </div>
+                    <div class="eskill">
+                        <div class="eskill-icon"><img src="icon/eskill.svg" alt=""></div>
+                        <div class="eskill-name">
+                            <%=user.extra_skills[3]%>
+                        </div>
+                    </div>
+                </div>
                 <div class="marginer"></div>
             </div>
             <div class="middle_frame"></div>
