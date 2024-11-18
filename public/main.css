@@ -706,7 +706,7 @@
 
 .pricing-price {
   position: relative;
-  width: 145px;
+  width: 166px;
   height: 40px;
   margin-top: 19px;
   display: flex;
@@ -717,7 +717,7 @@
 
 .pricing-price span:first-child {
   position: relative;
-  width: 95px;
+  width: 116px;
   height: 40px;
   color: var(--Black, #2b2b2b);
   font-size: 32px;
@@ -806,18 +806,41 @@
   justify-content: center;
   align-items: center;
   border-radius: 30px;
-  background: var(--White, #fff);
+  background: #fff;
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+}
+
+.prices-page__pricing .pricing-button.active {
+  background: #ffb400;
 }
 
 .pricing-button button {
-  background-color: white;
+  background: none;
   border: none;
   color: #2b2b2b;
   font-size: 14px;
   font-weight: 600;
   line-height: normal;
   text-transform: capitalize;
+}
+
+.prices-page__pricing .pricing-popular {
+  position: absolute;
+  top: 0px;
+  width: 310px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2b2b2b;
+  font-kerning: none;
+  font-feature-settings: "calt" off;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+  text-transform: capitalize;
+  background-color: #ffb400;
 }
 
 /* Second frame => recommends page styles */
