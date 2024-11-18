@@ -22,272 +22,419 @@
 
 <body>
     <div class="frame">
-        <div class="main_frame">
-            <div class="left_frame">
-                <div class="left-profile lefter">
-                    <div class="left-profile__pic">
-                        <img src="images/profile.png" alt="profile picture" width="156.16px" height="135.05px">
-                    </div>
-                    <div class="left-profile__name">
-                        <%=user.name%>
-                    </div>
-                    <div class="left-profile__job">
-                        <%=user.profession%>
-                    </div>
-                    <div class="left-profile__icons">
-                        <a href="" class="link_href">
-                            <div class="icon"><img src="icon/i-facebook.svg" alt="icon facebook" class="icon-1"></div>
-                        </a>
-                        <a href="" class="link_href">
-                            <div class="icon"><img src="icon/i-instagram.svg" alt="icon instagram" class="icon-1"></div>
-                        </a>
-                        <a href="" class="link_href">
-                            <div class="icon"><img src="icon/i-twitter.svg" alt="icon twitter" class="icon-1"></div>
-                        </a>
-                        <a href="" class="link_href">
-                            <div class="icon"><img src="icon/i-linkedin.svg" alt="icon linkedin" class="icon-1"></div>
-                        </a>
-                        <a href="" class="link_href">
-                            <div class="icon"><img src="icon/i-youtube.svg" alt="icon youtube" class="icon-1"></div>
-                        </a>
-                        <a href="" class="link_href">
-                            <div class="icon"><img src="icon/i-dribbble.svg" alt="icon dribbble" class="icon-1"></div>
-                        </a>
-                    </div>
-                </div>
-                <div class="marginer"></div>
-                <div class="left-info lefter">
-                    <div class="inf">
-                        <div class="comm">age:</div>
-                        <div class="comm-left">
-                            <%=user.age%>
+        <div class="major-frame">
+            <div class="main_frame">
+                <div class="left_frame">
+                    <div class="left-profile lefter">
+                        <div class="left-profile__pic">
+                            <img src="images/profile.png" alt="profile picture" width="156.16px" height="135.05px">
                         </div>
-                    </div>
-                    <div class="inf">
-                        <div class="comm">residency:</div>
-                        <div class="comm-left">
-                            <%=user.residence%>
+                        <div class="left-profile__name">
+                            <%=user.name%>
                         </div>
-                    </div>
-                    <div class="inf">
-                        <div class="comm">freelance:</div>
-                        <div class="comm-left active">Available</div>
-                    </div>
-                    <div class="inf">
-                        <div class="comm">address:</div>
-                        <div class="comm-left">
-                            <%=user.address%>
+                        <div class="left-profile__job">
+                            <%=user.profession%>
                         </div>
-                    </div>
-                </div>
-                <div class="marginer"></div>
-                <div class="left-languages lefter-1">
-                    <div class="lang-title">languages</div>
-                    <div class="lang-item">
-                        <div class="lang">
-                            <div class="lang-name">
-                                <%=user.languages[0]%>
-                            </div>
-                            <div class="lang-pro">100%</div>
-                        </div>
-                        <div class="lang-line"><img src="icon/line1.svg" alt=""></div>
-                    </div>
-                    <div class="lang-item">
-                        <div class="lang">
-                            <div class="lang-name">
-                                <%=user.languages[1]%>
-                            </div>
-                            <div class="lang-pro">80%</div>
-                        </div>
-                        <div class="lang-line"><img src="icon/line2.svg" alt=""></div>
-                    </div>
-                    <div class="lang-item">
-                        <div class="lang">
-                            <div class="lang-name">
-                                <%=user.languages[2]%>
-                            </div>
-                            <div class="lang-pro">60%</div>
-                        </div>
-                        <div class="lang-line"><img src="icon/line3.svg" alt=""></div>
-                    </div>
-                </div>
-                <div class="marginer"></div>
-                <div class="left-skills lefter-1">
-                    <div class="lang-title">skills</div>
-                    <div class="lang-item">
-                        <div class="lang">
-                            <div class="lang-name">
-                                <%=user.skills[0]%>
-                            </div>
-                            <div class="lang-pro">90%</div>
-                        </div>
-                        <div class="lang-line"><img src="icon/line4.svg" alt=""></div>
-                    </div>
-                    <div class="lang-item">
-                        <div class="lang">
-                            <div class="lang-name">
-                                <%=user.skills[1]%>
-                            </div>
-                            <div class="lang-pro">85%</div>
-                        </div>
-                        <div class="lang-line"><img src="icon/line5.svg" alt=""></div>
-                    </div>
-                    <div class="lang-item">
-                        <div class="lang">
-                            <div class="lang-name">
-                                <%=user.skills[2]%>
-                            </div>
-                            <div class="lang-pro">80%</div>
-                        </div>
-                        <div class="lang-line"><img src="icon/line6.svg" alt=""></div>
-                    </div>
-                    <div class="lang-item">
-                        <div class="lang">
-                            <div class="lang-name">
-                                <%=user.skills[3]%>
-                            </div>
-                            <div class="lang-pro">75%</div>
-                        </div>
-                        <div class="lang-line"><img src="icon/line7.svg" alt=""></div>
-                    </div>
-                    <div class="lang-item">
-                        <div class="lang">
-                            <div class="lang-name">
-                                <%=user.skills[4]%>
-                            </div>
-                            <div class="lang-pro">85%</div>
-                        </div>
-                        <div class="lang-line"><img src="icon/line8.svg" alt=""></div>
-                    </div>
-                </div>
-                <div class="marginer"></div>
-                <div class="left-eskills lefter-1">
-                    <div class="lang-title">extra skills</div>
-                    <div class="eskill">
-                        <div class="eskill-icon"><img src="icon/eskill.svg" alt=""></div>
-                        <div class="eskill-name">
-                            <%=user.extra_skills[0]%>
-                        </div>
-                    </div>
-                    <div class="eskill">
-                        <div class="eskill-icon"><img src="icon/eskill.svg" alt=""></div>
-                        <div class="eskill-name">
-                            <%=user.extra_skills[1]%>
-                        </div>
-                    </div>
-                    <div class="eskill">
-                        <div class="eskill-icon"><img src="icon/eskill.svg" alt=""></div>
-                        <div class="eskill-name">
-                            <%=user.extra_skills[2]%>
-                        </div>
-                    </div>
-                    <div class="eskill">
-                        <div class="eskill-icon"><img src="icon/eskill.svg" alt=""></div>
-                        <div class="eskill-name">
-                            <%=user.extra_skills[3]%>
-                        </div>
-                    </div>
-                </div>
-                <div class="marginer"></div>
-            </div>
-            <div class="middle_frame">
-                <div class="middle-intro">
-                    <div class="intro-cv">
-                        <div class="middle-intro__work">
-                            Doctor neurologists
-                            in OHSU Hospital
-                        </div>
-                        <div class="middle-intro__description">
-                            <%=user.about_me%>
-                        </div>
-                        <div class="middle-intro__button">
-                            <button>hire me</button>
-                            <img src="btn_icon/intro-button.svg" alt="intro button icon">
-                        </div>
-                    </div>
-                    <div class="middle-intro__picture">
-                        <img src="images/my-image.png" alt="my picture" width="326.055px" height="446.633px">
-                    </div>
-                </div>
-                <div class="middle-services">
-                    <div class="middle-services__title">my services</div>
-                    <div class="middle-services__subtitle">
-                        <%=user.service_desc%>
-                    </div>
-                    <div class="middle-services__list">
-                        <div class="list-service">
-                            <div class="list-service__icon">
-                                <img src="menu_icon/web-icon.svg" alt="web icon">
-                            </div>
-                            <div class="list-service__title">web development</div>
-                            <div class="list-service__subtitle">blog, e-commerce</div>
-                        </div>
-                        <div class="list-service">
-                            <div class="list-service__icon">
-                                <img src="menu_icon/ui-icon.svg" alt="web icon">
-                            </div>
-                            <div class="list-service__title">uI/uX design</div>
-                            <div class="list-service__subtitle">Mobile app, website design</div>
-                        </div>
-                        <div class="list-service">
-                            <div class="list-service__icon">
-                                <img src="menu_icon/sound-icon.svg" alt="web icon">
-                            </div>
-                            <div class="list-service__title">sound design</div>
-                            <div class="list-service__subtitle">Voice Over, Beat Making</div>
-                        </div>
-                        <div class="list-service">
-                            <div class="list-service__icon">
-                                <img src="menu_icon/game-icon.svg" alt="web icon">
-                            </div>
-                            <div class="list-service__title">game design</div>
-                            <div class="list-service__subtitle">Character Design, Props & Objects</div>
-                        </div>
-                        <div class="list-service">
-                            <div class="list-service__icon">
-                                <img src="menu_icon/photo-icon.svg" alt="web icon">
-                            </div>
-                            <div class="list-service__title">photography</div>
-                            <div class="list-service__subtitle">portrait, product photography</div>
-                        </div>
-                        <div class="list-service">
-                            <div class="service-add__title">advertising</div>
-                            <div class="service-add__subtitle">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Vitae nulla diam in ac dictum a urna viverra morbi.
-                            </div>
-                            <a class="service-add__button" target="_blank" rel="noopener noreferrer" href="">
-                                <button>ORDER NOW</button><img src="menu_icon/add-icon.svg" alt="icon">
+                        <div class="left-profile__icons">
+                            <a href="" class="link_href">
+                                <div class="icon"><img src="icon/i-facebook.svg" alt="icon facebook" class="icon-1">
+                                </div>
                             </a>
-                            <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+                            <a href="" class="link_href">
+                                <div class="icon"><img src="icon/i-instagram.svg" alt="icon instagram" class="icon-1">
+                                </div>
+                            </a>
+                            <a href="" class="link_href">
+                                <div class="icon"><img src="icon/i-twitter.svg" alt="icon twitter" class="icon-1"></div>
+                            </a>
+                            <a href="" class="link_href">
+                                <div class="icon"><img src="icon/i-linkedin.svg" alt="icon linkedin" class="icon-1">
+                                </div>
+                            </a>
+                            <a href="" class="link_href">
+                                <div class="icon"><img src="icon/i-youtube.svg" alt="icon youtube" class="icon-1"></div>
+                            </a>
+                            <a href="" class="link_href">
+                                <div class="icon"><img src="icon/i-dribbble.svg" alt="icon dribbble" class="icon-1">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="marginer"></div>
+                    <div class="left-info lefter">
+                        <div class="inf">
+                            <div class="comm">age:</div>
+                            <div class="comm-left">
+                                <%=user.age%>
+                            </div>
+                        </div>
+                        <div class="inf">
+                            <div class="comm">residency:</div>
+                            <div class="comm-left">
+                                <%=user.residence%>
+                            </div>
+                        </div>
+                        <div class="inf">
+                            <div class="comm">freelance:</div>
+                            <div class="comm-left active">Available</div>
+                        </div>
+                        <div class="inf">
+                            <div class="comm">address:</div>
+                            <div class="comm-left">
+                                <%=user.address%>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="marginer"></div>
+                    <div class="left-languages lefter-1">
+                        <div class="lang-title">languages</div>
+                        <div class="lang-item">
+                            <div class="lang">
+                                <div class="lang-name">
+                                    <%=user.languages[0]%>
+                                </div>
+                                <div class="lang-pro">100%</div>
+                            </div>
+                            <div class="lang-line"><img src="icon/line1.svg" alt=""></div>
+                        </div>
+                        <div class="lang-item">
+                            <div class="lang">
+                                <div class="lang-name">
+                                    <%=user.languages[1]%>
+                                </div>
+                                <div class="lang-pro">80%</div>
+                            </div>
+                            <div class="lang-line"><img src="icon/line2.svg" alt=""></div>
+                        </div>
+                        <div class="lang-item">
+                            <div class="lang">
+                                <div class="lang-name">
+                                    <%=user.languages[2]%>
+                                </div>
+                                <div class="lang-pro">60%</div>
+                            </div>
+                            <div class="lang-line"><img src="icon/line3.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="marginer"></div>
+                    <div class="left-skills lefter-1">
+                        <div class="lang-title">skills</div>
+                        <div class="lang-item">
+                            <div class="lang">
+                                <div class="lang-name">
+                                    <%=user.skills[0]%>
+                                </div>
+                                <div class="lang-pro">90%</div>
+                            </div>
+                            <div class="lang-line"><img src="icon/line4.svg" alt=""></div>
+                        </div>
+                        <div class="lang-item">
+                            <div class="lang">
+                                <div class="lang-name">
+                                    <%=user.skills[1]%>
+                                </div>
+                                <div class="lang-pro">85%</div>
+                            </div>
+                            <div class="lang-line"><img src="icon/line5.svg" alt=""></div>
+                        </div>
+                        <div class="lang-item">
+                            <div class="lang">
+                                <div class="lang-name">
+                                    <%=user.skills[2]%>
+                                </div>
+                                <div class="lang-pro">80%</div>
+                            </div>
+                            <div class="lang-line"><img src="icon/line6.svg" alt=""></div>
+                        </div>
+                        <div class="lang-item">
+                            <div class="lang">
+                                <div class="lang-name">
+                                    <%=user.skills[3]%>
+                                </div>
+                                <div class="lang-pro">75%</div>
+                            </div>
+                            <div class="lang-line"><img src="icon/line7.svg" alt=""></div>
+                        </div>
+                        <div class="lang-item">
+                            <div class="lang">
+                                <div class="lang-name">
+                                    <%=user.skills[4]%>
+                                </div>
+                                <div class="lang-pro">85%</div>
+                            </div>
+                            <div class="lang-line"><img src="icon/line8.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="marginer"></div>
+                    <div class="left-eskills lefter-1">
+                        <div class="lang-title">extra skills</div>
+                        <div class="eskill">
+                            <div class="eskill-icon"><img src="icon/eskill.svg" alt=""></div>
+                            <div class="eskill-name">
+                                <%=user.extra_skills[0]%>
+                            </div>
+                        </div>
+                        <div class="eskill">
+                            <div class="eskill-icon"><img src="icon/eskill.svg" alt=""></div>
+                            <div class="eskill-name">
+                                <%=user.extra_skills[1]%>
+                            </div>
+                        </div>
+                        <div class="eskill">
+                            <div class="eskill-icon"><img src="icon/eskill.svg" alt=""></div>
+                            <div class="eskill-name">
+                                <%=user.extra_skills[2]%>
+                            </div>
+                        </div>
+                        <div class="eskill">
+                            <div class="eskill-icon"><img src="icon/eskill.svg" alt=""></div>
+                            <div class="eskill-name">
+                                <%=user.extra_skills[3]%>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="marginer"></div>
+                </div>
+                <div class="middle_frame">
+                    <div class="middle-intro">
+                        <div class="intro-cv">
+                            <div class="middle-intro__work">
+                                Doctor neurologists
+                                in OHSU Hospital
+                            </div>
+                            <div class="middle-intro__description">
+                                <%=user.about_me%>
+                            </div>
+                            <div class="middle-intro__button">
+                                <button>hire me</button>
+                                <img src="btn_icon/intro-button.svg" alt="intro button icon">
+                            </div>
+                        </div>
+                        <div class="middle-intro__picture">
+                            <img src="images/my-image.png" alt="my picture" width="326.055px" height="446.633px">
+                        </div>
+                    </div>
+                    <div class="middle-services">
+                        <div class="middle-services__title">my services</div>
+                        <div class="middle-services__subtitle">
+                            <%=user.service_desc%>
+                        </div>
+                        <div class="middle-services__list">
+                            <div class="list-service">
+                                <div class="list-service__icon">
+                                    <img src="menu_icon/web-icon.svg" alt="web icon">
+                                </div>
+                                <div class="list-service__title">web development</div>
+                                <div class="list-service__subtitle">blog, e-commerce</div>
+                            </div>
+                            <div class="list-service">
+                                <div class="list-service__icon">
+                                    <img src="menu_icon/ui-icon.svg" alt="web icon">
+                                </div>
+                                <div class="list-service__title">uI/uX design</div>
+                                <div class="list-service__subtitle">Mobile app, website design</div>
+                            </div>
+                            <div class="list-service">
+                                <div class="list-service__icon">
+                                    <img src="menu_icon/sound-icon.svg" alt="web icon">
+                                </div>
+                                <div class="list-service__title">sound design</div>
+                                <div class="list-service__subtitle">Voice Over, Beat Making</div>
+                            </div>
+                            <div class="list-service">
+                                <div class="list-service__icon">
+                                    <img src="menu_icon/game-icon.svg" alt="web icon">
+                                </div>
+                                <div class="list-service__title">game design</div>
+                                <div class="list-service__subtitle">Character Design, Props & Objects</div>
+                            </div>
+                            <div class="list-service">
+                                <div class="list-service__icon">
+                                    <img src="menu_icon/photo-icon.svg" alt="web icon">
+                                </div>
+                                <div class="list-service__title">photography</div>
+                                <div class="list-service__subtitle">portrait, product photography</div>
+                            </div>
+                            <div class="list-service">
+                                <div class="service-add__title">advertising</div>
+                                <div class="service-add__subtitle">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Vitae nulla diam in ac dictum a urna viverra morbi.
+                                </div>
+                                <a class="service-add__button" target="_blank" rel="noopener noreferrer" href="">
+                                    <button>ORDER NOW</button><img src="menu_icon/add-icon.svg" alt="icon">
+                                </a>
+                                <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="right_frame">
+                    <div class="right-contrast">
+                        <img src="btn_icon/contrast-icon.svg" alt="contrast icon">
+                    </div>
+                    <div class="right-menu">
+                        <a class="right-menu__item" target="_blank" rel="noopener noreferrer" href="">
+                            <img src="btn_icon/home-i.svg" alt="icon">
+                        </a>
+                        <a class="right-menu__item" target="_blank" rel="noopener noreferrer" href="">
+                            <img src="btn_icon/code-i.svg" alt="icon">
+                        </a>
+                        <a class="right-menu__item" target="_blank" rel="noopener noreferrer" href="">
+                            <img src="btn_icon/cv-i.svg" alt="icon">
+                        </a>
+                        <a class="right-menu__item" target="_blank" rel="noopener noreferrer" href="">
+                            <img src="btn_icon/vector-i.svg" alt="icon">
+                        </a>
+                        <a class="right-menu__item" target="_blank" rel="noopener noreferrer" href="">
+                            <img src="btn_icon/blog-i.svg" alt="icon">
+                        </a>
+                        <a class="right-menu__item" target="_blank" rel="noopener noreferrer" href="">
+                            <img src="btn_icon/contact-i.svg" alt="icon">
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="right_frame">
-                <div class="right-contrast">
-                    <img src="btn_icon/contrast-icon.svg" alt="contrast icon">
+            <div class="remain-frame">
+                <div class="prices-page">
+                    <div class="prices-page__title tlt">Price plans</div>
+                    <div class="prices-page__subtitle subtlt">Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum</div>
+                    <div class="prices-page__list">
+                        <div class="prices-page__pricing">
+                            <div class="pricing-type">silver</div>
+                            <div class="pricing-price">
+                                <span>$0.00</span><span>/hour</span>
+                            </div>
+                            <div class="pricing-description">
+                                For most businesses that want to optimize web queries
+                            </div>
+                            <div class="pricing-list">
+                                <div class="pricing-list__item">
+                                    <img src="box_images/check.svg" alt="check"><span>UI Design</span>
+                                </div>
+                                <div class="pricing-list__item">
+                                    <img src="box_images/check.svg" alt="check"><span>web development</span>
+                                </div>
+                                <div class="pricing-list__item">
+                                    <img src="box_images/close.svg" alt="check"><span class="pass">logo design</span>
+                                </div>
+                                <div class="pricing-list__item">
+                                    <img src="box_images/close.svg" alt="check"><span class="pass">seo
+                                        optimization</span>
+                                </div>
+                                <div class="pricing-list__item">
+                                    <img src="box_images/close.svg" alt="check"><span class="pass">wordPress
+                                        integration</span>
+                                </div>
+                                <div class="pricing-list__item">
+                                    <img src="box_images/close.svg" alt="check"><span class="pass">5 Websites</span>
+                                </div>
+                                <div class="pricing-list__item">
+                                    <img src="box_images/close.svg" alt="check"><span class="pass">unlimited user</span>
+                                </div>
+                                <div class="pricing-list__item">
+                                    <img src="box_images/close.svg" alt="check"><span class="pass">20 gB
+                                        bandwith</span>
+                                </div>
+                            </div>
+                            <div class="pricing-button">
+                                <button>ORDER NOW</button>
+                            </div>
+                        </div>
+                        <div class="prices-page__pricing">
+                            <div class="pricing-type">silver</div>
+                            <div class="pricing-price">
+                                <span>$0.00</span><span>/hour</span>
+                            </div>
+                            <div class="pricing-description">
+                                For most businesses that want to optimize web queries
+                            </div>
+                            <div class="pricing-list">
+                                <div class="pricing-list__item">
+                                    <img src="box_images/check.svg" alt="check"><span>UI Design</span>
+                                </div>
+                                <div class="pricing-list__item">
+                                    <img src="box_images/check.svg" alt="check"><span>web development</span>
+                                </div>
+                                <div class="pricing-list__item">
+                                    <img src="box_images/close.svg" alt="check"><span class="pass">logo design</span>
+                                </div>
+                                <div class="pricing-list__item">
+                                    <img src="box_images/close.svg" alt="check"><span class="pass">seo
+                                        optimization</span>
+                                </div>
+                                <div class="pricing-list__item">
+                                    <img src="box_images/close.svg" alt="check"><span class="pass">wordPress
+                                        integration</span>
+                                </div>
+                                <div class="pricing-list__item">
+                                    <img src="box_images/close.svg" alt="check"><span class="pass">5 Websites</span>
+                                </div>
+                                <div class="pricing-list__item">
+                                    <img src="box_images/close.svg" alt="check"><span class="pass">unlimited user</span>
+                                </div>
+                                <div class="pricing-list__item">
+                                    <img src="box_images/close.svg" alt="check"><span class="pass">20 gB
+                                        bandwith</span>
+                                </div>
+                            </div>
+                            <div class="pricing-button">
+                                <button>ORDER NOW</button>
+                            </div>
+                        </div>
+                        <div class="prices-page__pricing">
+                            <div class="pricing-type">silver</div>
+                            <div class="pricing-price">
+                                <span>$0.00</span><span>/hour</span>
+                            </div>
+                            <div class="pricing-description">
+                                For most businesses that want to optimize web queries
+                            </div>
+                            <div class="pricing-list">
+                                <div class="pricing-list__item">
+                                    <img src="box_images/check.svg" alt="check"><span>UI Design</span>
+                                </div>
+                                <div class="pricing-list__item">
+                                    <img src="box_images/check.svg" alt="check"><span>web development</span>
+                                </div>
+                                <div class="pricing-list__item">
+                                    <img src="box_images/close.svg" alt="check"><span class="pass">logo design</span>
+                                </div>
+                                <div class="pricing-list__item">
+                                    <img src="box_images/close.svg" alt="check"><span class="pass">seo
+                                        optimization</span>
+                                </div>
+                                <div class="pricing-list__item">
+                                    <img src="box_images/close.svg" alt="check"><span class="pass">wordPress
+                                        integration</span>
+                                </div>
+                                <div class="pricing-list__item">
+                                    <img src="box_images/close.svg" alt="check"><span class="pass">5 Websites</span>
+                                </div>
+                                <div class="pricing-list__item">
+                                    <img src="box_images/close.svg" alt="check"><span class="pass">unlimited user</span>
+                                </div>
+                                <div class="pricing-list__item">
+                                    <img src="box_images/close.svg" alt="check"><span class="pass">20 gB
+                                        bandwith</span>
+                                </div>
+                            </div>
+                            <div class="pricing-button">
+                                <button>ORDER NOW</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="right-menu">
-                    <a class="right-menu__item" target="_blank" rel="noopener noreferrer" href="">
-                        <img src="btn_icon/home-i.svg" alt="icon">
-                    </a>
-                    <a class="right-menu__item" target="_blank" rel="noopener noreferrer" href="">
-                        <img src="btn_icon/code-i.svg" alt="icon">
-                    </a>
-                    <a class="right-menu__item" target="_blank" rel="noopener noreferrer" href="">
-                        <img src="btn_icon/cv-i.svg" alt="icon">
-                    </a>
-                    <a class="right-menu__item" target="_blank" rel="noopener noreferrer" href="">
-                        <img src="btn_icon/vector-i.svg" alt="icon">
-                    </a>
-                    <a class="right-menu__item" target="_blank" rel="noopener noreferrer" href="">
-                        <img src="btn_icon/blog-i.svg" alt="icon">
-                    </a>
-                    <a class="right-menu__item" target="_blank" rel="noopener noreferrer" href="">
-                        <img src="btn_icon/contact-i.svg" alt="icon">
-                    </a>
-                </div>
+                <div class="recommends-page"></div>
+                <div class="education-page"></div>
+                <div class="work-page"></div>
+                <div class="portfolio-page"></div>
+                <div class="blog-page"></div>
+                <div class="contact-page"></div>
+                <div class="map-page"></div>
+                <div class="partners-page"></div>
+                <div class="footer"></div>
             </div>
         </div>
     </div>

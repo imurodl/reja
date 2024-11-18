@@ -8,9 +8,19 @@
   height: 100%;
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: #e5e5e5;
+}
+
+.frame .major-frame {
+  position: relative;
+  width: 1440px;
+  height: 8063px;
+  display: flex;
+  flex-direction: column;
+  background: #f0f0f6;
 }
 
 .frame .main_frame {
@@ -21,7 +31,6 @@
   flex-direction: row;
   align-items: flex-start;
   margin-top: 2px;
-  background: #f0f0f6;
 }
 
 /* Left frame styles */
@@ -601,4 +610,302 @@
 
 .right-menu .right-menu__item:first-child {
   background: #ffb400;
+}
+
+/* Second frame styles */
+
+.remain-frame {
+  position: relative;
+  width: 970px;
+  height: 6735px;
+  margin-top: 13px;
+  margin-left: 335px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 70px;
+
+  /* background: aqua; */
+}
+
+.tlt {
+  position: relative;
+  color: #2b2b2b;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 123.6%;
+  text-transform: capitalize;
+}
+
+.subtlt {
+  position: relative;
+  color: #767676;
+  text-align: center;
+  font-kerning: none;
+  font-feature-settings: "calt" off;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+  text-transform: capitalize;
+}
+
+/* Second frame => prices page styles */
+
+.remain-frame .prices-page {
+  position: relative;
+  width: 970px;
+  height: 793px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prices-page__title {
+  width: 174px;
+  height: 40px;
+}
+
+.prices-page__subtitle {
+  width: 438px;
+  height: 68px;
+  margin-top: 25px;
+}
+
+.prices-page__list {
+  position: relative;
+  width: 970px;
+  height: 609px;
+  margin-top: 51px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.prices-page__pricing {
+  position: relative;
+  width: 310px;
+  height: 609px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+
+.pricing-type {
+  position: relative;
+  height: 30px;
+  color: #2b2b2b;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 123.6%;
+  text-transform: capitalize;
+
+  margin-top: 54px;
+}
+
+.pricing-price {
+  position: relative;
+  width: 145px;
+  height: 40px;
+  margin-top: 19px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.pricing-price span:first-child {
+  position: relative;
+  width: 95px;
+  height: 40px;
+  color: var(--Black, #2b2b2b);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 123.6%; /* 39.552px */
+  text-transform: capitalize;
+}
+
+.pricing-price span:last-child {
+  position: relative;
+  width: 40px;
+  height: 24px;
+  color: #2b2b2b;
+  font-kerning: none;
+  font-feature-settings: "calt" off;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+  text-transform: capitalize;
+}
+
+.pricing-description {
+  position: relative;
+  width: 248px;
+  height: 48px;
+  margin-top: 8px;
+  color: #767676;
+  text-align: center;
+  font-kerning: none;
+  font-feature-settings: "calt" off;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+  text-transform: capitalize;
+}
+
+.pricing-list {
+  position: relative;
+  width: 253px;
+  height: 305px;
+  margin-top: 21px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.pricing-list__item {
+  position: relative;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.pricing-list__item img {
+  position: relative;
+  width: 24.885px;
+  height: 24px;
+}
+
+.pricing-list__item span {
+  position: relative;
+  height: 24px;
+  margin-left: 15.11px;
+  color: #2b2b2b;
+  font-kerning: none;
+  font-feature-settings: "calt" off;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+  text-transform: capitalize;
+}
+
+.pricing-list__item span.pass {
+  color: #767676;
+}
+
+.pricing-button {
+  position: relative;
+  width: 168px;
+  height: 38px;
+  margin-top: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background: var(--White, #fff);
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.pricing-button button {
+  background-color: white;
+  border: none;
+  color: #2b2b2b;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+/* Second frame => recommends page styles */
+
+.remain-frame .recommends-page {
+  position: relative;
+  width: 970px;
+  height: 566px;
+
+  background: #fff;
+}
+
+/* Second frame => education page styles */
+
+.remain-frame .education-page {
+  position: relative;
+  width: 970px;
+  height: 815px;
+
+  background: #fff;
+}
+
+/* Second frame => work page styles */
+
+.remain-frame .work-page {
+  position: relative;
+  width: 970px;
+  height: 815px;
+
+  background: #fff;
+}
+
+/* Second frame => portfolio page styles */
+
+.remain-frame .portfolio-page {
+  position: relative;
+  width: 970px;
+  height: 1195px;
+
+  background: #fff;
+}
+
+/* Second frame => blog page styles */
+
+.remain-frame .blog-page {
+  position: relative;
+  width: 970px;
+  height: 665px;
+
+  background: #fff;
+}
+
+/* Second frame => contact page styles */
+
+.remain-frame .contact-page {
+  position: relative;
+  width: 970px;
+  height: 755px;
+
+  background: #fff;
+}
+
+/* Second frame => map page styles */
+
+.remain-frame .map-page {
+  position: relative;
+  width: 970px;
+  height: 300px;
+
+  background: #fff;
+}
+
+/* Second frame => partners page styles */
+
+.remain-frame .partners-page {
+  position: relative;
+  width: 970px;
+  height: 140px;
+
+  background: #fff;
+}
+
+/* Second frame => footer styles */
+
+.remain-frame .footer {
+  position: relative;
+  width: 970px;
+  height: 60px;
+
+  background: #fff;
 }
