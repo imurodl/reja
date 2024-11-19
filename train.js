@@ -99,3 +99,16 @@ console.log("passed here 1");
 //   .catch((err) => {
 //     console.log("ERROR:", err);
 //   });
+
+// A-TASK
+
+function countLetter(ltr, word) {
+  let a = 0;
+
+  for (let i = 0; i < word.length; i++) {
+    if (ltr === word[i]) a++;
+  }
+  return console.log(a);
+}
+
+countLetter("e", "engineering");
