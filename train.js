@@ -102,6 +102,7 @@ console.log("passed here 1");
 
 // A-TASK
 
+/*
 function countLetter(ltr, word) {
   let a = 0;
 
@@ -111,4 +112,37 @@ function countLetter(ltr, word) {
   return console.log(a);
 }
 
-countLetter("e", "engineering");
+countLetter("m", "mathematics");
+*/
+
+async function countLetter(ltr, word) {
+  if (typeof ltr !== "string" || ltr.length !== 1) {
+    throw new Error("First argument must be a single letter");
+  }
+  if (typeof word !== "string") {
+    throw new Error("Second argument must be a string");
+  } else {
+    let count = 0;
+    for (let i = 0; i < word.length; i++) {
+      if (ltr.toLowerCase() === word[i].toLowerCase()) count++;
+    }
+    return count;
+  }
+}
+
+async function run() {
+  try {
+    let result = await countLetter("m", "mathematics");
+    console.log("result:", result);
+
+    result = await countLetter("z", "mathematics");
+    console.log("result:", result);
+
+    result = await countLetter("45", "mathematics");
+    console.log("result:", result);
+  } catch (err) {
+    console.log("error:", err.message);
+  }
+}
+
+run();
