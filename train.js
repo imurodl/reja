@@ -52,15 +52,15 @@ run();
 // Shunday function tuzing, u 1ta string parametrga ega bolsin, hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
 // MASALAN countDigits("ad2a54y79wet0sfgb4") 7ni return qiladi.
 
-/* // Solution 1: core logic
+// Solution 1: core logic
 function countDigits(ltr) {
   if (ltr.length === 0 || typeof ltr == "number") {
     console.log("Insert a string");
   } else {
     let count = 0;
-    for (let i = 0; i < ltr.length; i++) {
-      for (let l = 0; l <= 9; l++) {
-        if (l == ltr[i]) count++;
+    for (let char of ltr) {
+      for (let i = 0; i <= 9; i++) {
+        if (i == char) count++;
       }
     }
     return count;
@@ -68,7 +68,6 @@ function countDigits(ltr) {
 }
 const result = countDigits("ad2a54y79wet0sfgb98");
 console.log("result:", result);
-*/
 
 /* // Solution 2: with callback function
 function countDigits(ltr, callback) {
@@ -76,9 +75,9 @@ function countDigits(ltr, callback) {
     callback("Insert a string", null);
   else {
     let count = 0;
-    for (let i = 0; i < ltr.length; i++) {
-      for (let l = 0; l <= 9; l++) {
-        if (l == ltr[i]) count++;
+    for (let char of ltr) {
+      for (let i = 0; i <= 9; i++) {
+        if (i == char) count++;
       }
     }
     callback(null, count);
@@ -97,9 +96,9 @@ async function countDigits(ltr, callback) {
     throw new Error("Insert a string");
   else {
     let count = 0;
-    for (let i = 0; i < ltr.length; i++) {
-      for (let l = 0; l <= 9; l++) {
-        if (l == ltr[i]) count++;
+    for (let char of ltr) {
+      for (let i = 0; i <= 9; i++) {
+        if (i == char) count++;
       }
     }
     return count;
