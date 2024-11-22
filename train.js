@@ -52,56 +52,44 @@ run();
 // Shunday function tuzing, u 1ta string parametrga ega bolsin, hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
 // MASALAN countDigits("ad2a54y79wet0sfgb4") 7ni return qiladi.
 
-// Solution 1: core logic
+/* // Solution 1: core logic
 function countDigits(ltr) {
-  if (ltr.length === 0 || typeof ltr == "number") {
+  if (ltr.length === 0 || typeof ltr != "string") {
     console.log("Insert a string");
   } else {
-    let count = 0;
-    for (let char of ltr) {
-      for (let i = 0; i <= 9; i++) {
-        if (i == char) count++;
-      }
-    }
-    return count;
+    let count = [...ltr].filter((char) => {
+      if (char >= "0" && char <= "9") return char;
+    });
+    return count.length;
   }
 }
-const result = countDigits("ad2a54y79wet0sfgb98");
+const result = countDigits("ad2a54y79wet0sf7gb98");
 console.log("result:", result);
+*/
 
 /* // Solution 2: with callback function
 function countDigits(ltr, callback) {
-  if (ltr.length === 0 || typeof ltr == "number")
+  if (ltr.length === 0 || typeof ltr != "string")
     callback("Insert a string", null);
-  else {
-    let count = 0;
-    for (let char of ltr) {
-      for (let i = 0; i <= 9; i++) {
-        if (i == char) count++;
-      }
-    }
-    callback(null, count);
-  }
+  let count = [...ltr].filter((char) => char >= "0" && char <= "9").length;
+  callback(null, count);
 }
 
-countDigits("ad2a54y79wet0sfgb98", (err, data) => {
+countDigits("ad2a54y79wet0s9fgb98", (err, data) => {
   if (err) console.log("error:", err);
   else console.log("javob:", data);
 });
 */
 
-/* // Solution 3: wish async/await multiple results
+// Solution 3: wish async/await multiple results
 async function countDigits(ltr, callback) {
-  if (ltr.length === 0 || typeof ltr == "number")
+  if (ltr.length === 0 || typeof ltr != "string")
     throw new Error("Insert a string");
   else {
-    let count = 0;
-    for (let char of ltr) {
-      for (let i = 0; i <= 9; i++) {
-        if (i == char) count++;
-      }
-    }
-    return count;
+    let count = [...ltr].filter((char) => {
+      if (char >= "0" && char <= "9") return char;
+    });
+    return count.length;
   }
 }
 
@@ -121,4 +109,3 @@ async function countResult() {
 }
 
 countResult();
-*/
