@@ -81,6 +81,7 @@ countDigits("ad2a54y79wet0s9fgb98", (err, data) => {
 });
 */
 
+/*
 // Solution 3: wish async/await multiple results
 async function countDigits(ltr, callback) {
   if (ltr.length === 0 || typeof ltr != "string")
@@ -109,3 +110,68 @@ async function countResult() {
 }
 
 countResult();
+*/
+
+//  ------------------- C-TASK: -----------------------
+
+// Shunday class tuzing tuzing nomi Shop, va uni constructoriga 3 hil mahsulot pass bolsin,
+// hamda classning 3ta methodi bolsin, biri qoldiq, biri sotish va biri qabul. Har bir method ishga tushgan vaqt ham log qilinsin.
+
+// MASALAN: const shop = new Shop(4, 5, 2); shop.qoldiq() return hozir 20:40da 4ta non, 5ta lagmon va 2ta cola mavjud!
+// shop.sotish('non', 3) & shop.qabul('cola', 4) & shop.qoldiq() return hozir 20:50da 1ta non, 5ta lagmon va 6ta cola mavjud!
+const moment = require("moment");
+
+class Shop {
+  // state
+  non;
+  lagmon;
+  cola;
+
+  // constructor
+  constructor(non, lagmon, cola) {
+    this.non = non;
+    this.lagmon = lagmon;
+    this.cola = cola;
+  }
+
+  // methods
+  hozirgiVaqt() {
+    return moment().format("h:mm");
+  }
+
+  qoldiq() {
+    const vaqt = this.hozirgiVaqt();
+    console.log(
+      `hozir ${vaqt}da ${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola mavjud!`
+    );
+  }
+
+  sotish(mahsulot, soni) {
+    const vaqt = this.hozirgiVaqt();
+    if (!this[mahsulot]) {
+      console.log(`Error: Do'konda bu turdagi mahsulot mavjud emas`);
+      return;
+    }
+    if (this[mahsulot] < soni) {
+      console.log(`Yetarli ${mahsulot}  mavjud emas`);
+    } else {
+      this[mahsulot] = this[mahsulot] - soni;
+      console.log(`hozir ${vaqt}da ${soni}ta ${mahsulot} sotildi.`);
+    }
+  }
+  qabul(mahsulot, soni) {
+    const vaqt = this.hozirgiVaqt();
+    if (!this[mahsulot]) {
+      console.log(`Error: Do'konda bu turdagi mahsulot mavjud emas`);
+      return;
+    }
+    if (this[mahsulot] <= 0) {
+      console.log(`Mahsulot soni not'gri kiritildi`);
+      return;
+    }
+    this[mahsulot] = this[mahsulot] + soni;
+    console.log(`hozir ${vaqt}da ${soni}ta ${mahsulot} mavjud`);
+  }
+}
+const shop = new Shop(4, 5, 2);
+shop.sotish("non", 3) & shop.qabul("cola", 4) & shop.qoldiq();
