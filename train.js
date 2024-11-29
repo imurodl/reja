@@ -119,6 +119,7 @@ countResult();
 
 // MASALAN: const shop = new Shop(4, 5, 2); shop.qoldiq() return hozir 20:40da 4ta non, 5ta lagmon va 2ta cola mavjud!
 // shop.sotish('non', 3) & shop.qabul('cola', 4) & shop.qoldiq() return hozir 20:50da 1ta non, 5ta lagmon va 6ta cola mavjud!
+/*
 const moment = require("moment");
 
 class Shop {
@@ -175,3 +176,54 @@ class Shop {
 }
 const shop = new Shop(4, 5, 2);
 shop.sotish("non", 3) & shop.qabul("cola", 4) & shop.qoldiq();
+*/
+
+//  ------------------- D-TASK: -----------------------
+
+function checkContent(a, b) {
+  if (a.length !== b.length) return false;
+
+  function sorter(ele) {
+    return ele.toLowerCase().split("").sort().join("");
+  }
+
+  return sorter(a) === sorter(b);
+}
+
+const result = checkContent("MITGroup", "gmtiprOu");
+console.log(result);
+
+/*  // Another solution
+function checkContent(a, b) {
+  if (a.length !== b.length) return false;
+
+  a = a.toLowerCase();
+  b = b.toLowerCase();
+
+  let arr = Array.from(a);
+
+  let obj = {};
+  for (let char of b) {
+    obj[char] = true;
+  }
+
+  return arr.every((ele) => obj[ele]);
+}
+
+const result = checkContent("MITGroup", "gmtiprou");
+console.log(result);
+*/
+
+/* // Another solution
+function checkContent(a, b) {
+  if (a.length !== b.length) return false;
+
+  let x = Array.from(a.toLowerCase());
+  let y = Array.from(b.toLowerCase());
+
+  return x.every((ele) => y.includes(ele));
+}
+
+const result = checkContent("MITGroup", "gmtiprou");
+console.log(result);
+*/
