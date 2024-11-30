@@ -42,6 +42,7 @@ app.post("/create-item", (req, res) => {
 });
 
 app.post("/delete-item", (req, res) => {
+  console.log("user entered /delete-item");
   const id = req.body.id;
   db.collection("plans").deleteOne(
     { _id: new mongodb.ObjectId(id) },
@@ -52,6 +53,7 @@ app.post("/delete-item", (req, res) => {
 });
 
 app.post("/delete-all", (req, res) => {
+  console.log("user entered /delete-all");
   if (req.body.delete_all) {
     db.collection("plans").deleteMany(function () {
       res.json({ state: "all plans deleted" });
@@ -60,6 +62,7 @@ app.post("/delete-all", (req, res) => {
 });
 
 app.post("/edit-item", (req, res) => {
+  console.log("user entered /edit-item");
   const data = req.body;
   db.collection("plans").findOneAndUpdate(
     { _id: new mongodb.ObjectId(data.id) },
@@ -74,8 +77,27 @@ app.get("/author", (req, res) => {
   res.render("author", { user: user });
 });
 
+// test
+const requestIp = require("request-ip"); // Install with `npm install request-ip`
+
+app.use((req, res, next) => {
+  const clientIp = requestIp.getClientIp(req); // Retrieve the user's IP address
+  const userAgent = req.headers["user-agent"]; // Retrieve User-Agent from headers
+  console.log(`Client IP: ${clientIp}, User-Agent: ${userAgent}`);
+  next(); // Proceed to the next middleware or route
+});
+// /test
+
 app.get("/", function (req, res) {
-  console.log("user entered /");
+  // test
+  const clientIp = requestIp.getClientIp(req);
+  const userAgent = req.headers["user-agent"];
+  console.log(
+    `User entered /create-item from IP: ${clientIp}, Device: ${userAgent}`
+  );
+  // /test
+
+  // console.log("user entered /");
   db.collection("plans")
     .find()
     .toArray((err, data) => {
