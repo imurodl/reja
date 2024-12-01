@@ -180,6 +180,7 @@ shop.sotish("non", 3) & shop.qabul("cola", 4) & shop.qoldiq();
 
 //  ------------------- D-TASK: -----------------------
 
+/*
 function checkContent(a, b) {
   if (a.length !== b.length) return false;
 
@@ -192,6 +193,7 @@ function checkContent(a, b) {
 
 const result = checkContent("MITGroup", "gmtiprOu");
 console.log(result);
+*/
 
 /*  // Another solution
 function checkContent(a, b) {
@@ -227,3 +229,15 @@ function checkContent(a, b) {
 const result = checkContent("MITGroup", "gmtiprou");
 console.log(result);
 */
+
+//  ------------------- E-TASK: -----------------------
+
+// Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
+// MASALAN: getReverse("hello") return qilsin "olleh"
+
+function getReverse(a) {
+  return a.split("").reverse().join("");
+}
+
+const result = getReverse("hello");
+console.log(result);
