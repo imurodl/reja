@@ -235,9 +235,29 @@ console.log(result);
 // Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
 // MASALAN: getReverse("hello") return qilsin "olleh"
 
+/*
 function getReverse(a) {
   return a.split("").reverse().join("");
 }
 
 const result = getReverse("hello");
+console.log(result);
+*/
+
+//  ------------------- F-TASK: -----------------------
+
+// Yagona string argumentga ega findDoublers nomli function tuzing
+// Agar stringda bittadan ortiq bir xil harflar ishtirok etgan bo'lsa true yokida false natija qaytarsin.
+// MASALAN: findDoublers("hello"); natija true qaytadi. Sababi ikki marotaba takrorlangan 'll' harfi mavjud!
+
+function findDoublers(a) {
+  if (typeof a == "number") return false;
+
+  x = Array.from(a.toLowerCase());
+  if (x.includes(" ")) return false;
+
+  return x.some((char) => x.lastIndexOf(char) !== x.indexOf(char));
+}
+
+const result = findDoublers("hello");
 console.log(result);
